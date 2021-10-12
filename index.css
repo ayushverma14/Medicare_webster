@@ -1,0 +1,77 @@
+
+body{
+    background-color: #04AA6D;
+}
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  /*  Add css to search bar*/
+
+  .search-box{
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .searchText{
+      width: 0px;
+      border-radius: 10px;
+      
+text-align: center;
+border: none;
+outline: none;
+outline: none;
+font-size:20px;
+transition: all 0.2s linear;
+
+  }
+
+  .searchText:focus{
+      outline: none;
+  }
+
+  .search-box:hover > .searchText 
+  {
+      width: 15rem;
+  }
+
+  
+
+  body{
+    background:rgb(53, 175, 23);
+    }
+    .form-control-borderless {
+        border: none;
+    }
+    
+    .form-control-borderless:hover, .form-control-borderless:active, .form-control-borderless:focus {
+        border: none;
+        outline: none;
+        box-shadow: none;
+    }
