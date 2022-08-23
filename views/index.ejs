@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body
+        {
+            padding: 5%;
+            
+        }
+        div
+        {
+            border:10px black;
+            
+            position: relative;
+            padding: 2%;
+        }
+
+    </style>
+    
+    <script type="text/javascript">
+       
+    </script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color:aqua;">
+    <h1 style="text-align: center; font-family: 'Courier New', Courier, monospace;"><u><b> Doctors</b></u></h1>
+    <br>
+    <hr>
+    <div class='parent' style='background-color: aqua;'>
+    <div class="div1"  style="background-color: white; ">
+        <h4 style="padding: 1%;color: black;">Online Doctors</h4>
+        <hr>
+        <form action="/resume.ejs " method="post">
+       <% nam.forEach((item)=>{%>
+         <input type="submit" style="padding: 2%;" name="bb" class="btn btn-primary" value=<%= item.Name %>>   
+            <%});%>
+        </form>
+      
+    </div>
+    <br>
+    <br>
+    <div class="div2" style="  background-color:white;">
+<h4 style="color: black;">Doctors around You</h4>
+
+<hr>
+    </div>
+    </div>
+</body>
+</html>
